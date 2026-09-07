@@ -2,10 +2,212 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>My Personal Site</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shepherd Bowling — Web Developer Portfolio</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Add your HTML content here -->
+
+  <!-- ============================================= 
+       NAVIGATION
+       ============================================= -->
+
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">Shepherd Bowling</div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ============================================= 
+       HERO
+       ============================================= -->
+
+  <header class="hero">
+    <div class="container">
+      <p class="hero-greeting">Hi, I'm Shepherd Bowling</p>
+      <h1>I build clean, functional web applications.</h1>
+      <p>A Master's computer science student at Rice University specializing in AI, with a background in IT data analytics and a growing focus on full-stack development. This site collects projects from my coursework and internships.</p>
+      <div class="hero-links">
+        <a href="#projects" class="btn btn-primary">View my projects</a>
+        <a href="#contact" class="btn btn-secondary">Get in touch</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============================================= 
+       ABOUT
+       ============================================= -->
+
+  <section id="about">
+    <div class="container">
+      <h2 class="section-heading">About</h2>
+      <div class="about-content">
+        <figure class="about-photo">
+          <img src="img/Grad Photo Tilt Left.png" alt="Shepherd Bowling wearing his Rice University graduation regalia">
+          <figcaption>Rice University, Class of 2026</figcaption>
+        </figure>
+        <div class="about-text">
+          <p>I'm a Master of Computer Science student at Rice University, specializing in Artificial Intelligence, and also finishing my bachelor's in computer science there. I came to Rice by way of West Point, and I play football as a student-athlete alongside my coursework &mdash; I was the first football student-athlete to earn a computer science degree at Rice in over a decade.</p>
+          <p>Last summer I interned as an IT Analyst at Apache Corp, where I worked on SAP system enhancements and built data pipelines connecting Power BI, Azure API Management, and Palantir Foundry. Outside of that, I enjoy building small full-stack projects, from real-time web apps to data-driven sports analysis.</p>
+        </div>
+        <dl class="about-facts">
+          <dt>Location</dt>
+          <dd>Houston, TX</dd>
+          <dt>Studying</dt>
+          <dd>M.S. Computer Science, AI Specialization &mdash; Rice University</dd>
+          <dt>Currently learning</dt>
+          <dd>Full-stack &amp; real-time web development</dd>
+        </dl>
+      </div>
+      <div class="campus-gallery">
+        <figure>
+          <img src="img/Main.webp" alt="The main entrance building at Rice University">
+          <figcaption>Rice University campus</figcaption>
+        </figure>
+        <figure>
+          <img src="img/Hallway.webp" alt="A covered hallway with arches at Rice University">
+          <figcaption>A familiar campus path</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================= 
+       PROJECTS
+       ============================================= -->
+
+  <section id="projects" class="projects-section">
+    <div class="container">
+      <h2 class="section-heading">Projects</h2>
+      <p class="section-intro">A selection of projects from my coursework. Each one links to the live site and the code.</p>
+
+      <div class="project-grid">
+
+        <!-- Project 1 -->
+        <article class="project-card">
+          <div class="project-image"></div>
+          <h3>Real-Time Web Messaging Application</h3>
+          <p>A fully functional, real-time messaging client similar to Discord or Slack. Built as a completely static, library-free frontend using vanilla TypeScript and open shadow-DOM web components &mdash; with login, workspaces, channels, threaded posts, markdown formatting, and live emoji reactions.</p>
+          <ul class="project-tags">
+            <li>HTML</li>
+            <li>TypeScript</li>
+            <li>CSS</li>
+            <li>NoSQL</li>
+          </ul>
+          <div class="project-links">
+            <a href="#">Live site</a>
+            <a href="#">Source code</a>
+          </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="project-card">
+          <div class="project-image"></div>
+          <h3>Evaluating and Ranking Top Free Agent Pitchers</h3>
+          <p>Analyzed 2024 MLB regular-season data to project future performance for top free-agent pitchers, comparing four common evaluation metrics. Presented findings in a four-page data-driven report with scatter plot visualizations to support hypothetical free-agent signings.</p>
+          <ul class="project-tags">
+            <li>R</li>
+            <li>CSV</li>
+          </ul>
+          <div class="project-links">
+            <a href="#">Report</a>
+            <a href="#">Source code</a>
+          </div>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="project-card">
+          <div class="project-image"></div>
+          <h3>Analyze Network Resiliency</h3>
+          <p>Used breadth-first search graph exploration to reason about the resilience of networks under random and targeted attacks. Quantified resilience by measuring the change in size of the largest connected component as the network's topology was disrupted.</p>
+          <ul class="project-tags">
+            <li>Python</li>
+            <li>Graph Algorithms</li>
+          </ul>
+          <div class="project-links">
+            <a href="#">Source code</a>
+          </div>
+        </article>
+
+        <!-- Copy an <article class="project-card"> block above to add more projects -->
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================= 
+       SKILLS
+       ============================================= -->
+
+  <section id="skills">
+    <div class="container">
+      <h2 class="section-heading">Skills</h2>
+      <p class="section-intro">Tools and technologies I'm learning and using in coursework.</p>
+
+      <div class="skills-grid">
+        <div class="skill-group">
+          <h3><i class="fa-solid fa-code" aria-hidden="true"></i> Languages</h3>
+          <ul>
+            <li>TypeScript</li>
+            <li>HTML &amp; CSS</li>
+            <li>Python</li>
+            <li>R</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h3><i class="fa-solid fa-database" aria-hidden="true"></i> Data &amp; Systems</h3>
+          <ul>
+            <li>SAP</li>
+            <li>Power BI</li>
+            <li>Azure API Management</li>
+            <li>Palantir Foundry</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h3><i class="fa-solid fa-screwdriver-wrench" aria-hidden="true"></i> Tools</h3>
+          <ul>
+            <li>Git &amp; GitHub</li>
+            <li>VS Code</li>
+            <li>Web Components</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================= 
+       CONTACT
+       ============================================= -->
+
+  <section id="contact" class="contact-section">
+    <div class="container">
+      <h2 class="section-heading">Contact</h2>
+      <p class="section-intro">I'm open to internships, collaborations, and feedback on my work. The best ways to reach me:</p>
+      <div class="contact-methods">
+        <a href="mailto:sgb5@rice.edu"><i class="fa-solid fa-envelope" aria-hidden="true"></i> sgb5@rice.edu</a>
+        <a href="tel:+18329139441"><i class="fa-solid fa-phone" aria-hidden="true"></i> (832) 913-9441</a>
+        <a href="https://linkedin.com/in/Shepherd-Bowling"><i class="fa-brands fa-linkedin" aria-hidden="true"></i> linkedin.com/in/Shepherd-Bowling</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================= 
+       FOOTER
+       ============================================= -->
+
+  <footer>
+    <p>&copy; 2026 Shepherd Bowling. Built with HTML &amp; CSS.</p>
+  </footer>
+
 </body>
 </html>
