@@ -18,9 +18,11 @@
 
   <nav class="navbar">
     <div class="nav-container">
-      <div class="nav-logo">Shepherd Bowling</div>
+      <a class="nav-logo" href="index.html">Shepherd Bowling</a>
       <ul class="nav-links">
         <li><a href="#about">About</a></li>
+        <li><a href="Resume/index.html">Resume</a></li>
+        <li><a href="#experience">Experience</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#contact">Contact</a></li>
@@ -54,35 +56,61 @@
       <div class="about-content">
         <figure class="about-photo">
           <img src="img/Grad Photo Tilt Left.png" alt="Shepherd Bowling wearing his Rice University graduation regalia">
-          <figcaption>Rice University, Class of 2026</figcaption>
         </figure>
         <div class="about-text">
-          <p>I'm a Master of Computer Science student at Rice University, specializing in Artificial Intelligence, and also finishing my bachelor's in computer science there. I came to Rice by way of West Point, and I play football as a student-athlete alongside my coursework &mdash; I was the first football student-athlete to earn a computer science degree at Rice in over a decade.</p>
-          <p>Last summer I interned as an IT Analyst at Apache Corp, where I worked on SAP system enhancements and built data pipelines connecting Power BI, Azure API Management, and Palantir Foundry. Outside of that, I enjoy building small full-stack projects, from real-time web apps to data-driven sports analysis.</p>
+          <p>After graduating in the top 6% of my 800+ student class at Katy High School and captaining our football team to a Texas class 6A state championship, I received over 20 divison one athletic scholarships to continue my academic and athletic career. I chose to attend the United States Military Academy at West Point with the aim of fostering my leadership capabilities and serving others while being academically challenged and competing at the highest level of collegiate sport. </p>
+          <p>After a year at West Point, I transferred to Rice University to continue my pursuit of devolping as a leader, athlete, and scholar. I am currently enrolled in the George R. Brown School of Engineering and Computing, pursuing a Master of Computer Science with an AI specialization while I complete my Bachelor of Computer Science degree.</p>
+          <a class="about-resume-link" href="Resume/index.html">View my resume</a>
         </div>
         <dl class="about-facts">
           <dt>Location</dt>
-          <dd>Houston, TX</dd>
+          <dd>- Houston, TX</dd>
           <dt>Studying</dt>
-          <dd>M.S. Computer Science, AI Specialization &mdash; Rice University</dd>
+          <dd>Rice University:</dd>
+          <dd>- M.S. Computer Science, AI Specialization</dd>
+          <dd>- B.S. Computer Science</dd>
           <dt>Currently learning</dt>
-          <dd>Full-stack &amp; real-time web development</dd>
+          <dd>- Full-stack</dd>
+          <dd>- Real-time web development</dd>
         </dl>
       </div>
       <div class="campus-gallery">
         <figure>
-          <img src="img/Main.webp" alt="The main entrance building at Rice University">
-          <figcaption>Rice University campus</figcaption>
+          <img src="img/Hallway.webp" alt="A hallway view at Rice University">
         </figure>
         <figure>
-          <img src="img/Hallway.webp" alt="A covered hallway with arches at Rice University">
-          <figcaption>A familiar campus path</figcaption>
+          <img src="img/Quad Arial.webp" alt="The quad at Rice University">
         </figure>
       </div>
     </div>
   </section>
 
-  <!-- ============================================= 
+  <!-- =============================================
+       EXPERIENCE
+       ============================================= -->
+
+  <section id="experience" class="experience-section">
+    <div class="container">
+      <h2 class="section-heading">Experience</h2>
+      <article class="experience-entry">
+        <div class="experience-heading">
+          <h3>Apache Corp.</h3>
+          <p>IT Analyst Intern <span>June 2025 &mdash; August 2025</span></p>
+        </div>
+        <h4>Applications Team</h4>
+        <ul class="experience-list">
+          <li>Enhanced the SAP system by replicating an outsourced application within SAP, providing $100K in annual savings.</li>
+        </ul>
+        <h4>IT Data Management and Analytics</h4>
+        <ul class="experience-list">
+          <li>Created a Power Query SDK script that linked to a Microsoft Azure API Management system.</li>
+          <li>Developed an Azure API Management program that transferred Power BI data to Palantir Foundry and returned the information to Power BI.</li>
+        </ul>
+      </article>
+    </div>
+  </section>
+
+  <!-- =============================================
        PROJECTS
        ============================================= -->
 
@@ -95,7 +123,9 @@
 
         <!-- Project 1 -->
         <article class="project-card">
-          <div class="project-image"></div>
+          <div class="project-image">
+            <img src="img/chat app.png" alt="Chat application interface preview">
+          </div>
           <h3>Real-Time Web Messaging Application</h3>
           <p>A fully functional, real-time messaging client similar to Discord or Slack. Built as a completely static, library-free frontend using vanilla TypeScript and open shadow-DOM web components &mdash; with login, workspaces, channels, threaded posts, markdown formatting, and live emoji reactions.</p>
           <ul class="project-tags">
@@ -112,7 +142,9 @@
 
         <!-- Project 2 -->
         <article class="project-card">
-          <div class="project-image"></div>
+          <div class="project-image">
+            <img class="baseball-image" src="img/baseball.jpg" alt="Baseball analytics dashboard preview">
+          </div>
           <h3>Evaluating and Ranking Top Free Agent Pitchers</h3>
           <p>Analyzed 2024 MLB regular-season data to project future performance for top free-agent pitchers, comparing four common evaluation metrics. Presented findings in a four-page data-driven report with scatter plot visualizations to support hypothetical free-agent signings.</p>
           <ul class="project-tags">
@@ -127,7 +159,9 @@
 
         <!-- Project 3 -->
         <article class="project-card">
-          <div class="project-image"></div>
+          <div class="project-image">
+            <img src="img/securty.jpg" alt="Network security visualization preview">
+          </div>
           <h3>Analyze Network Resiliency</h3>
           <p>Used breadth-first search graph exploration to reason about the resilience of networks under random and targeted attacks. Quantified resilience by measuring the change in size of the largest connected component as the network's topology was disrupted.</p>
           <ul class="project-tags">

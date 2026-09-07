@@ -1,0 +1,225 @@
+/* You can poke around this CSS if you want to customize your formatting / styling further */
+/* You can even import custom fonts! */
+
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Tinos:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap');
+
+/* meta */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #e8ecef;
+}
+
+body {
+    font-family: Tinos, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+    font-size:  14px;
+    font-weight: 400;
+}
+
+.navbar {
+    position: sticky;
+    top: 0;
+    background-color: #16232E;
+    z-index: 100;
+}
+
+.nav-container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 18px 24px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.nav-logo {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: #F7F9FB;
+    text-decoration: none;
+}
+
+.nav-links {
+    display: flex;
+    gap: 32px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    list-style: none;
+}
+
+.nav-links a {
+    color: #D8E0E6;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.95rem;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.nav-links a:hover,
+.nav-links a:focus-visible,
+.nav-logo:hover,
+.nav-logo:focus-visible {
+    color: #E3B23C;
+}
+
+main {
+    max-width: 816px;
+    margin: 32px auto;
+    padding: 48px;
+    background-color: #ffffff;
+}
+
+.spacer {
+    margin: 0px auto;
+}
+
+.vertical-spacer {
+    height: 8px;
+}
+
+/* ordering of content */
+h1 {
+    order: 0;
+}
+
+.headerInfo {
+    order: 1;
+}
+
+/* styling content */
+h1, h2, h3, p, a, li {
+    color: black;
+}
+
+h2 {
+    margin: 10px 0px;
+}
+
+h3 {
+    margin: 6px 0px;
+}
+
+h1 {
+    color: black;
+    text-transform: uppercase;
+    text-align: left;
+    font-size: 32px;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    border-bottom: 1px solid #000000;
+    text-transform: uppercase;
+    font-size: 16px;
+    padding: 0;
+}
+
+h3 {
+    display: flex;
+    font-size: 15px;
+    padding: 0;
+    justify-content: space-between;
+}
+
+p {
+    margin: 0;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    padding: 0;
+    display: flex;
+}
+
+li > p {
+    display: inline;
+}
+
+a {
+    color: black;
+}
+
+ul {
+    margin: 4px 0;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+strong, em, a {
+    padding-left: 1px;
+    padding-right: 2px;
+}
+
+/* header info content */
+.headerInfo > ul {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin: 6px auto 0px !important;
+    padding: 0;
+}
+
+.headerInfo > ul > li {
+    display: inline;
+    white-space: pre;
+    list-style-type: none;
+}
+
+.headerInfo > ul >li:not(:last-child) {
+    margin-right: 8px;
+}
+
+.headerInfo > ul > li:not(:last-child):after {
+    content: "•";
+    margin-left: 8px;
+}
+
+@media (max-width: 700px) {
+    .nav-container {
+        padding: 14px 16px;
+    }
+
+    .nav-links {
+        gap: 12px;
+    }
+
+    .nav-links a {
+        font-size: 0.75rem;
+    }
+
+    .nav-logo {
+        font-size: 0.9rem;
+    }
+
+    main {
+        margin: 16px 12px;
+        padding: 24px;
+    }
+}
+
+@media print {
+    body {
+        background-color: #ffffff;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    main {
+        max-width: none;
+        margin: 0;
+        padding: 0;
+    }
+}

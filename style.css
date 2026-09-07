@@ -75,35 +75,43 @@ section {
 .navbar {
   position: sticky;
   top: 0;
-  background-color: var(--color-bg);
-  border-bottom: 1px solid var(--color-border);
+  background-color: var(--color-bg-dark);
   z-index: 100;
 }
 
 .nav-container {
-  max-width: var(--max-width);
+  width: 100%;
   margin: 0 auto;
   padding: 18px 24px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  position: relative;
 }
 
 .nav-logo {
   font-family: var(--font-heading);
   font-weight: 700;
   font-size: 1.1rem;
+  color: var(--color-text-light);
+}
+
+.nav-logo:hover,
+.nav-logo:focus-visible {
+  color: var(--color-accent-light);
 }
 
 .nav-links {
   display: flex;
   gap: 32px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .nav-links a {
   font-size: 0.95rem;
   font-weight: 500;
-  color: var(--color-muted);
+  color: #D8E0E6;
   transition: color 0.2s ease;
 }
 
@@ -118,7 +126,7 @@ section {
 
 .hero {
   background-color: var(--color-bg-dark);
-  background-image: linear-gradient(rgba(22, 35, 46, 0.88), rgba(22, 35, 46, 0.88)), url("img/Quad Arial.webp");
+  background-image: linear-gradient(rgba(22, 35, 46, 0.72), rgba(22, 35, 46, 0.72)), url("img/Main.webp");
   background-size: cover;
   background-position: center;
   color: var(--color-text-light);
@@ -216,12 +224,6 @@ section {
   border-radius: 4px;
 }
 
-figcaption {
-  color: var(--color-muted);
-  font-size: 0.85rem;
-  margin-top: 8px;
-}
-
 .about-text {
   flex: 1 1 400px;
 }
@@ -231,13 +233,26 @@ figcaption {
   color: var(--color-muted);
 }
 
+.about-resume-link {
+  display: inline-block;
+  color: var(--color-accent);
+  font-weight: 600;
+  border-bottom: 2px solid var(--color-accent-light);
+  padding-bottom: 2px;
+}
+
+.about-resume-link:hover,
+.about-resume-link:focus-visible {
+  color: var(--color-bg-dark);
+}
+
 .about-facts {
   flex: 1 1 240px;
 }
 
 .about-facts dt {
   font-weight: 600;
-  font-size: 0.9rem;
+  font-size: 1.05rem;
   color: var(--color-muted);
   margin-top: 16px;
 }
@@ -269,7 +284,55 @@ figcaption {
 }
 
 /* ============================================= 
-    7. PROJECTS SECTION
+    7. EXPERIENCE SECTION
+   ============================================= */
+
+.experience-section {
+  background-color: var(--color-bg);
+}
+
+.experience-entry {
+  border-left: 3px solid var(--color-accent);
+  padding-left: 20px;
+  max-width: 760px;
+}
+
+.experience-heading {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  align-items: baseline;
+  margin-bottom: 20px;
+}
+
+.experience-heading h3 {
+  font-size: 1.3rem;
+}
+
+.experience-heading p {
+  color: var(--color-muted);
+  font-size: 0.95rem;
+  white-space: nowrap;
+}
+
+.experience-heading p span {
+  margin-left: 16px;
+}
+
+.experience-entry h4 {
+  color: var(--color-accent);
+  font-size: 1rem;
+  margin: 14px 0 4px;
+}
+
+.experience-list {
+  list-style: disc;
+  margin-left: 20px;
+  color: var(--color-muted);
+}
+
+/* =============================================
+    8. PROJECTS SECTION
    ============================================= */
 
 .projects-section {
@@ -298,7 +361,19 @@ figcaption {
   background-color: var(--color-border);
   border-radius: 4px;
   margin-bottom: 4px;
-  /* Replace this placeholder with an <img> tag once you have a project screenshot */
+  overflow: hidden;
+}
+
+.project-card .project-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+.project-card .project-image .baseball-image {
+  object-position: 50% 10%;
 }
 
 .project-card h3 {
@@ -340,7 +415,7 @@ figcaption {
 }
 
 /* ============================================= 
-    8. SKILLS SECTION
+  9. SKILLS SECTION
    ============================================= */
 
 .skills-grid {
@@ -372,7 +447,7 @@ figcaption {
 }
 
 /* ============================================= 
-    9. CONTACT SECTION
+  10. CONTACT SECTION
    ============================================= */
 
 .contact-section {
@@ -418,12 +493,20 @@ footer {
 }
 
 /* ============================================= 
-    11. RESPONSIVE — smaller screens
+  11. RESPONSIVE — smaller screens
    ============================================= */
    
 @media (max-width: 640px) {
+  .nav-container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
   .nav-links {
     gap: 16px;
+    position: static;
+    transform: none;
+    align-self: center;
   }
   section {
     padding: 56px 20px;
