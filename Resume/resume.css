@@ -12,7 +12,7 @@
 
 body {
     margin: 0;
-    background-color: #e8ecef;
+    background-color: #E8DCCB;
 }
 
 body {
@@ -24,7 +24,7 @@ body {
 .navbar {
     position: sticky;
     top: 0;
-    background-color: #16232E;
+    background-color: #817F78;
     z-index: 100;
 }
 
@@ -41,7 +41,7 @@ body {
     font-family: 'Space Grotesk', sans-serif;
     font-weight: 700;
     font-size: 1.1rem;
-    color: #F7F9FB;
+    color: #FFF8EF;
     text-decoration: none;
 }
 
@@ -60,7 +60,7 @@ body {
 }
 
 .nav-links a {
-    color: #D8E0E6;
+    color: #EADBCB;
     font-family: 'Inter', sans-serif;
     font-size: 0.95rem;
     font-weight: 500;
@@ -71,14 +71,15 @@ body {
 .nav-links a:focus-visible,
 .nav-logo:hover,
 .nav-logo:focus-visible {
-    color: #E3B23C;
+    color: #C99A6B;
 }
 
 main {
     max-width: 816px;
     margin: 32px auto;
-    padding: 48px;
-    background-color: #ffffff;
+    padding: 80px 48px 48px;
+    background-color: #FBF7F0;
+    position: relative;
 }
 
 .spacer {
@@ -98,9 +99,24 @@ h1 {
     order: 1;
 }
 
+.download-resume-link {
+    position: absolute;
+    top: 48px;
+    right: 48px;
+    color: #9B9991;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.download-resume-link:hover,
+.download-resume-link:focus-visible {
+    color: #74726B;
+}
+
 /* styling content */
 h1, h2, h3, p, a, li {
-    color: black;
+    color: #35271F;
 }
 
 h2 {
@@ -121,7 +137,7 @@ h1 {
 }
 
 h2 {
-    border-bottom: 1px solid #000000;
+    border-bottom: 1px solid #B89576;
     text-transform: uppercase;
     font-size: 16px;
     padding: 0;
@@ -147,7 +163,7 @@ li > p {
 }
 
 a {
-    color: black;
+    color: #35271F;
 }
 
 ul {
@@ -164,9 +180,9 @@ strong, em, a {
 /* header info content */
 .headerInfo > ul {
     display: flex;
-    text-align: center;
-    justify-content: center;
-    margin: 6px auto 0px !important;
+    text-align: left;
+    justify-content: flex-start;
+    margin: 6px 0 0 !important;
     padding: 0;
 }
 
@@ -181,7 +197,7 @@ strong, em, a {
 }
 
 .headerInfo > ul > li:not(:last-child):after {
-    content: "•";
+    content: "|";
     margin-left: 8px;
 }
 
@@ -210,7 +226,7 @@ strong, em, a {
 
 @media print {
     body {
-        background-color: #ffffff;
+        background-color: #FBF7F0;
     }
 
     .navbar {
