@@ -3,16 +3,16 @@
     ============================================= */
 
 :root {
-  --color-bg: #F3EBDD;         /* main page background */
-  --color-bg-dark: #4A3428;    /* dark section background (hero, footer) */
-  --color-bar: #817F78;        /* navigation and footer bars */
-  --color-text: #35271F;       /* main text color */
-  --color-text-light: #FFF8EF; /* text on dark backgrounds */
-  --color-muted: #756254;      /* secondary/lighter text */
-  --color-accent: #8C5A3C;     /* primary accent (terracotta brown) */
-  --color-action: #9B9991;     /* warm gray for links and buttons */
-  --color-accent-light: #C99A6B; /* secondary accent (sand) */
-  --color-border: #DCC8B5;     /* hairline borders/dividers */
+  --color-bg: #F7F9FB;         /* main page background */
+  --color-bg-dark: #16232E;    /* dark section background (hero, footer) */
+  --color-bar: #16232E;        /* navigation and footer bars */
+  --color-text: #1F2933;       /* main text color */
+  --color-text-light: #F7F9FB; /* text on dark backgrounds */
+  --color-muted: #5A6774;      /* secondary/lighter text */
+  --color-accent: #1F6F5C;     /* primary accent (teal green) */
+  --color-action: #1F6F5C;     /* links and buttons */
+  --color-accent-light: #E3B23C; /* secondary accent (amber) */
+  --color-border: #DDE3E8;     /* hairline borders/dividers */
 
   --font-heading: 'Space Grotesk', sans-serif;
   --font-body: 'Inter', sans-serif;
@@ -128,7 +128,7 @@ section {
 
 .hero {
   background-color: var(--color-bg-dark);
-  background-image: linear-gradient(rgba(74, 52, 40, 0.72), rgba(74, 52, 40, 0.72)), url("img/Main.webp");
+  background-image: linear-gradient(rgba(22, 35, 46, 0.72), rgba(22, 35, 46, 0.72)), url("img/Main.webp");
   background-size: cover;
   background-position: center;
   color: var(--color-text-light);
